@@ -1,0 +1,12 @@
+plugins {
+  id 'groovy'
+}
+
+apply plugin: 'com.weigold.quote.plugin'
+
+
+quote {
+  quote = "The Details Of My Life Are Quite Inconsequential. Very Well, Where Do I Begin?"
+  person = "Dr. Evil"
+}
+
