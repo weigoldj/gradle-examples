@@ -1,0 +1,18 @@
+plugins {
+  id 'groovy'
+  id 'maven'
+}
+
+group = 'com.weigold'
+archivesBaseName = 'plugin-example'
+version = '1.0.0'
+
+dependencies {
+  compile gradleApi()
+}
+
+uploadArchives {
+  repositories {
+    flatDir { dirs "../repo" }
+  }
+}

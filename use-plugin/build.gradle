@@ -1,0 +1,18 @@
+buildscript {
+  dependencies {
+    classpath files('../repo/plugin-example-1.0.0.jar')
+  }
+}
+
+plugins {
+  id 'java'
+  id 'groovy'
+}
+
+apply plugin: 'com.weigold.quote.plugin'
+
+
+quote {
+  quote = "Finally, we come to my number-two man. His name? Number Two."
+  person = "Dr. Evil"
+}
